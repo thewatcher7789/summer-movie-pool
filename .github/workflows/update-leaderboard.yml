@@ -1,15 +1,14 @@
 name: 🔄 Auto‑update Summer Movie Pool Leaderboard
 
-# trigger on daily schedule, manual dispatch, or any push to main
 on:
   schedule:
-    - cron:  '0 12 * * *'   # every day at 12:00 UTC
-  workflow_dispatch: {}
+    # every day at 12:00 UTC
+    - cron:  '0 12 * * *'
+  workflow_dispatch:
   push:
     branches:
       - main
 
-# allow the action to push back to the repo
 permissions:
   contents: write
 
@@ -32,17 +31,15 @@ jobs:
 
     - name: Generate leaderboard
       run: |
-        # ensure docs/ exists
         mkdir -p docs
-
-        # run your script, pointing output to docs/index.html
-        # adjust flags if your script signature changed
+        # this will produce leaderboard.csv and leaderboard.html
         python summer_pool.py \
           --entries entries.csv \
           --csv summer_movies.csv \
-          --output docs/index.html
+          --debug
 
-        # move the CSV too
+        # move them into docs for Pages
+        mv leaderboard.html docs/index.html
         mv leaderboard.csv docs/leaderboard.csv
 
     - name: Commit & push changes
