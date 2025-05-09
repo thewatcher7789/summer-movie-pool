@@ -1,4 +1,6 @@
 name: Update Leaderboard
+permissions:
+  contents: write
 
 on:
   schedule:
