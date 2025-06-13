@@ -31,8 +31,12 @@ jobs:
 
       - name: Commit and push
         run: |
-          git config user.name  "GitHub Actions"
+          git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add leaderboard.csv leaderboard.html
-          git diff --quiet || git commit -m "🔄 Auto‑update leaderboard"
+          # Stage all changes (new files, modifications, deletions)
+          git add -A
+          # If there are no changes (nothing to commit), exit gracefully
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          # Commit and push changes if any
+          git commit -m "🔄 Auto-update leaderboard"
           git push
