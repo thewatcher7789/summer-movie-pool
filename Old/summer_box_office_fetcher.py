@@ -5,16 +5,6 @@ import re
 from decimal import Decimal
 import requests
 from bs4 import BeautifulSoup
-import re
-
-def normalize_title(title: str) -> str:
-    """
-    Turn “Some Movie: The Sequel!” → “somemoviet
-
-he sequel” → “somemoviethesequel”
-    i.e. lowercase + strip out anything that isn’t a–z or 0–9.
-    """
-    return re.sub(r'[^a-z0-9]', '', title.lower())
 
 BOX_OFFICE_URL = (
     "https://www.the-numbers.com/"
