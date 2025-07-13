@@ -29,14 +29,14 @@ jobs:
             --entries entries.csv \
             --csv summer_movies.csv
 
-      - name: Commit and push
+      - name: Commit & push changes
         run: |
-          git config user.name "GitHub Actions"
+          git config user.name  "GitHub Actions"
           git config user.email "actions@github.com"
-          # Stage all changes (new files, modifications, deletions)
-          git add -A
-          # If there are no changes (nothing to commit), exit gracefully
+          # Stage only the docs/ folder (new index.html and leaderboard.csv)
+          git add docs/index.html docs/leaderboard.csv
+          # If nothing new was staged, just exit successfully
           git diff --cached --quiet && echo "No changes to commit" && exit 0
-          # Commit and push changes if any
           git commit -m "🔄 Auto-update leaderboard"
           git push
+
