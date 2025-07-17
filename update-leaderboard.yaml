@@ -28,7 +28,9 @@ jobs:
           python summer_pool.py \
             --entries entries.csv \
             --csv summer_movies.csv
-
+          # move them into docs for Pages
+           mv leaderboard.html docs/index.html
+           mv leaderboard.csv docs/leaderboard.csv
       - name: Commit & push changes
         run: |
           git config user.name  "GitHub Actions"
