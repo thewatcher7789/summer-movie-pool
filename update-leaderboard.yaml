@@ -36,7 +36,7 @@ jobs:
           git config user.name  "GitHub Actions"
           git config user.email "actions@github.com"
           # Stage only the docs/ folder (new index.html and leaderboard.csv)
-          git add docs/index.html docs/leaderboard.csv
+          git add -A
           # If nothing new was staged, just exit successfully
           git diff --cached --quiet && echo "No changes to commit" && exit 0
           git commit -m "🔄 Auto-update leaderboard"
