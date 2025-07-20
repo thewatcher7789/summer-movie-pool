@@ -1,7 +1,0 @@
-# Python byte-code directories & files
-__pycache__/
-*.pyc
-
-# Old root-level leaderboard artifacts
-leaderboard.csv
-leaderboard.html
