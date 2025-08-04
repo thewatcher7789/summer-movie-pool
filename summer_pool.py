@@ -9,7 +9,7 @@ from summer_box_office_fetcher import get_top_10_summer_movies, normalize as nor
 MONTHLY_WINNERS = {
     'May':    'Lilo & Stitch',
     'June':   'How to Train Your Dragon',
-    'July':   None,
+    'July':   'Superman',
     'August': None,
 }
 
