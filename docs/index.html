@@ -5,53 +5,15 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <title>Summer Movie Pool Leaderboard</title>
   <style>
-    /* Page & Container */
-    body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background-color: #f4f7fa;
-      margin: 0;
-      padding: 20px;
-      color: #333;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      border-radius: 8px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 1rem;
-      color: #222;
-    }
-
-    /* Tables */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 2rem;
-    }
-    thead th {
-      background-color: #005f73;
-      color: #fff;
-      padding: 12px;
-      text-align: left;
-    }
-    tbody tr:nth-child(even) {
-      background-color: #e0fbfc;
-    }
-    tbody tr:hover {
-      background-color: #94d2bd;
-    }
-    td, th {
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
-    }
-    .rank-col {
-      width: 50px;
-    }
+    body { font-family: 'Segoe UI', Tahoma, sans-serif; background:#f4f7fa; margin:0; padding:20px; color:#333; }
+    .container { max-width:900px; margin:auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.1); }
+    h1 { text-align:center; margin:0 0 1rem; color:#222; }
+    table { width:100%; border-collapse:collapse; margin: 1.25rem 0 2rem; }
+    thead th { background:#005f73; color:#fff; padding:12px; text-align:left; }
+    tbody tr:nth-child(even){ background:#e0fbfc; }
+    tbody tr:hover{ background:#94d2bd; }
+    td,th { padding:10px; border-bottom:1px solid #ccc; }
+    .rank-col { width:50px; }
   </style>
 </head>
 <body>
@@ -60,16 +22,28 @@
     <table>
       <thead><tr><th class='rank-col'>#</th><th>Movie</th><th>Gross</th></tr></thead>
       <tbody>
-        <tr><td class='rank-col'>1</td><td>Lilo & Stitch</td><td>$421,807,503</td></tr>
-        <tr><td class='rank-col'>2</td><td>Superman</td><td>$347,817,782</td></tr>
+        <tr><td class='rank-col'>1</td><td>Lilo & Stitch</td><td>$421,811,136</td></tr>
+        <tr><td class='rank-col'>2</td><td>Superman</td><td>$348,162,782</td></tr>
         <tr><td class='rank-col'>3</td><td>Jurassic World Rebirth</td><td>$336,076,600</td></tr>
         <tr><td class='rank-col'>4</td><td>How to Train Your Dragon</td><td>$262,657,115</td></tr>
-        <tr><td class='rank-col'>5</td><td>The Fantastic Four: First Steps</td><td>$258,739,851</td></tr>
+        <tr><td class='rank-col'>5</td><td>The Fantastic Four: First Steps</td><td>$259,271,617</td></tr>
         <tr><td class='rank-col'>6</td><td>Mission: Impossible—The Final Reckoning</td><td>$197,413,515</td></tr>
         <tr><td class='rank-col'>7</td><td>Thunderbolts*</td><td>$190,274,328</td></tr>
-        <tr><td class='rank-col'>8</td><td>F1: The Movie</td><td>$186,315,037</td></tr>
+        <tr><td class='rank-col'>8</td><td>F1: The Movie</td><td>$186,525,037</td></tr>
         <tr><td class='rank-col'>9</td><td>Final Destination: Bloodlines</td><td>$138,130,814</td></tr>
-        <tr><td class='rank-col'>10</td><td>Weapons</td><td>$119,404,498</td></tr>
+        <tr><td class='rank-col'>10</td><td>Weapons</td><td>$120,854,498</td></tr>
+      </tbody>
+    </table>
+
+    <h1>Top 5 Distributors (May–Aug releases)</h1>
+    <table>
+      <thead><tr><th class='rank-col'>#</th><th>Distributor</th><th>Total Domestic</th></tr></thead>
+      <tbody>
+        <tr><td class='rank-col'>1</td><td>Walt Disney</td><td>$1,017,486,354</td></tr>
+        <tr><td class='rank-col'>2</td><td>Warner Bros.</td><td>$793,668,792</td></tr>
+        <tr><td class='rank-col'>3</td><td>Universal</td><td>$732,411,230</td></tr>
+        <tr><td class='rank-col'>4</td><td>Paramount Pictures</td><td>$277,214,784</td></tr>
+        <tr><td class='rank-col'>5</td><td>Sony Pictures</td><td>$155,138,212</td></tr>
       </tbody>
     </table>
 
@@ -87,18 +61,18 @@
     <table>
       <thead><tr><th class='rank-col'>#</th><th>Name</th><th>Score</th></tr></thead>
       <tbody>
-        <tr><td class='rank-col'>1</td><td>Tom McLean</td><td>40</td></tr>
+        <tr><td class='rank-col'>1</td><td>Tom McLean</td><td>45</td></tr>
         <tr><td class='rank-col'>2</td><td>Ryan Fischer</td><td>39</td></tr>
-        <tr><td class='rank-col'>3</td><td>Nick Wagner</td><td>28</td></tr>
-        <tr><td class='rank-col'>4</td><td>Niki Maloney</td><td>20</td></tr>
-        <tr><td class='rank-col'>5</td><td>Callum Appleby</td><td>18</td></tr>
-        <tr><td class='rank-col'>6</td><td>Joe Sallmen</td><td>18</td></tr>
-        <tr><td class='rank-col'>7</td><td>Josh Sallmen</td><td>15</td></tr>
-        <tr><td class='rank-col'>8</td><td>Peter Montini</td><td>13</td></tr>
+        <tr><td class='rank-col'>3</td><td>Niki Maloney</td><td>29</td></tr>
+        <tr><td class='rank-col'>4</td><td>Nick Wagner</td><td>28</td></tr>
+        <tr><td class='rank-col'>5</td><td>Joe Sallmen</td><td>23</td></tr>
+        <tr><td class='rank-col'>6</td><td>Peter Montini</td><td>22</td></tr>
+        <tr><td class='rank-col'>7</td><td>Josh Sallmen</td><td>20</td></tr>
+        <tr><td class='rank-col'>8</td><td>Callum Appleby</td><td>19</td></tr>
         <tr><td class='rank-col'>9</td><td>Leah McPhillips</td><td>12</td></tr>
         <tr><td class='rank-col'>10</td><td>Eric Magda</td><td>11</td></tr>
-        <tr><td class='rank-col'>11</td><td>Brandon and Emily</td><td>7</td></tr>
-        <tr><td class='rank-col'>12</td><td>William Shinevar</td><td>5</td></tr>
+        <tr><td class='rank-col'>11</td><td>William Shinevar</td><td>11</td></tr>
+        <tr><td class='rank-col'>12</td><td>Brandon and Emily</td><td>7</td></tr>
         <tr><td class='rank-col'>13</td><td>Q Jacobs</td><td>1</td></tr>
       </tbody>
     </table>
