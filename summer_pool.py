@@ -15,7 +15,7 @@ MONTHLY_WINNERS = {
     "May":    "Lilo & Stitch",
     "June":   "How to Train Your Dragon",
     "July":   "Superman",
-    "August": None,
+    "August": "Weapons",
 }
 
 # Points for distributor rank guesses
